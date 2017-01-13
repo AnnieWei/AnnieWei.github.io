@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" type="text/javascript"></script>
+  <script src="js/bootstrap.js" type="text/javascript"></script>
+  <style>
+    .banner img {
+      width: 100%;
+      height: 100%;
+    }
+    .resume {
+      padding: 50px;
+    }
+    .side {
+      background-color: #777;
+      height: 100%;
+      padding: 0;
+    }
+    #main {
+      background-color: #fff;
+      min-height: 600px;
+      padding: 0 50px 50px;
+    }
+    .profile {
+      background-color: #222;
+      text-align: center;
+      padding: 20px;
+    }
+    .side img {
+      width: 150px;
+      height: 150px;
+    }
+    .font-white {
+      color: #fff;
+    }
+    .contact {
+      padding: 2px 30px;
+    }
+    .contact ul {
+      padding-top: 30px;
+      padding-left: 0;
+      list-style: none;
+    }
+    .contact ul li {
+      margin-bottom: 2px;
+    }
+    .title {
+      font-size: 18px;
+      font-weight: 600;
+      margin: 25px 0;
+      color: #f3f;
+    }
+    .album {
+      background-color: #006;
+      padding: 50px;
+    }
+    .album img {
+      margin: 20px 0;
+    }
+    body {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript">
+    $(function(){
+      $("ul>li>a").click(function(event) {
+        event.preventDefault();
+        var ref = $(this).attr("href");
+        $("body, html").animate({ scrollTop: $(ref).offset().top }, 1000);
+      });
+      $('body').scrollspy({ target: '#navbar-example' })
+    });
+  </script>
+</head>
+<body data-spy="scroll" data-target="#navbar-example">
+  <div>
+    <nav id="navbar-example" class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">鮭魚肚的個魚網站</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#index">首頁</a></li>
+            <li><a href="#about">個魚介紹</a></li>
+            <li><a href="#photo">鮭魚肚與好夥伴的日常相片</a></li>
+          </ul>
+
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+  </div>
+  <div id="index" class="banner">
+    <img class="img-responsive" src="http://i.imgur.com/wS8be7h.jpg"  alt="" >
+  </div>
+  <div id="about" class="resume">
+    <div class="row">
+      <div class="visible-xs side col-sm-4 col-md-3">
+        <div class="profile">
+          <img class="img-circle" src="https://s3-us-west-1.amazonaws.com/niusnews-imgs/206824_2.jpg" alt="">
+          <h2 class="font-white">李敏鎬</h2>
+          <h4 class="font-white">韓國一線男演員</h4>
+        </div>
+        <div class="contact">
+          <ul class="font-white">
+            <li>
+              <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+              &nbsp;test@gmail.com
+            </li>
+            <li>
+              <span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>
+              &nbsp;0920123456
+            </li>
+          </ul>
+        </div>
+        <div class="contact">
+          <h4 class="font-white">教育程度</h4>
+          <h5 class="font-white">建國大學電影藝術學系</h5>
+          <h5 class="font-white">國民大學綜合藝術系研究所</h5>
+        </div>
+      </div>
+      <div id="main" class="col-sm-8 col-md-9">
+        <div class="area">
+          <div class="title">
+            <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+            <span>個人簡介</span>
+          </div>
+          <div class="content">
+            <p >刺身（日語：さしみ；或音譯沙西米），多指生魚片，也叫「魚生」，但也可用雞肉、馬肉或是任何可以切成片狀食用的食材製作，是一種常見的日本料理。
+              其做法是以新鮮的魚貝類生切成片，蘸醬油、山葵、味噌等調味料食用。</p><p>
+刺身一般都是用新鮮海魚、海貝製作，魚如果不新鮮，生吃可能會有細菌或是寄生蟲污染，因此雖然日本人是出了名的喜歡吃生魚片，但實際上在日本內陸，20世紀初尚未發明冰箱前並不普遍，只是沿海比較流行。
+現在保鮮和運輸條件改進後，吃刺身的日本人也開始多了起來。
+生魚片的營養價值頗高，含有豐富的蛋白質，而且是質地柔軟的優質蛋白質。它也含有豐富的維生素與微量礦物質。
+脂肪含量低，卻含有不少DHA等的ω-3脂肪酸。稱得上是營養豐富且容易吸收的食物。</p>
+<b >三國時期陳登以喜食生魚片聞名，但當時並無生食保鮮技術，故陳登多次食用後年紀輕輕便病發身亡。</b>
+<p>由於刺身是日本料理中最為清淡的菜式，所以在餐中通常為最早的一道菜。以免濃烈味道的菜式會把淡淡的魚鮮味蓋過。而且很多時候刺身亦會與壽司共食，多以蘿蔔、青菜、海藻等作配菜。</p>
+          </div>
+        </div>
+        <div class="area">
+          <div class="title">
+            <span class="glyphicon glyphicon-flash" aria-hidden="true"></span>
+            <span>評價</span>
+          </div>
+          <div class="content">
+            <div class="row">
+              <div class="col-md-1">
+                價格
+              </div>
+              <div class="col-md-10">
+                <div class="progress">
+                  <div class="progress-bar" style="width: 40%;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-1">
+                美味
+              </div>
+              <div class="col-md-10">
+                <div class="progress">
+                  <div class="progress-bar" style="width: 95%;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-1">
+                CP值
+              </div>
+              <div class="col-md-10">
+                <div class="progress">
+                  <div class="progress-bar" style="width: 100%;">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hidden-xs side col-sm-4 col-md-3">
+        <div class="profile">
+          <img class="img-circle" src="http://i.imgur.com/PbTtbfR.jpg" alt="">
+          <h2 class="font-white">鮭魚肚握壽司</h2>
+          <h4 class="font-white">日本一線美食</h4>
+        </div>
+        <div class="contact">
+          <ul class="font-white">
+            <li>
+              <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+              &nbsp;sashimiking@gmail.com
+            </li>
+            <li>
+              <span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>
+              &nbsp;0974947474
+            </li>
+          </ul>
+        </div>
+        <div class="contact">
+          <h4 class="font-white">教育程度</h4>
+          <h5 class="font-white">刺身大學日本美食藝術學系</h5>
+          <h5 class="font-white">櫻花大學綜合生魚片研究所</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="photo" class="album">
+    <div class="row">
+      <div class="col-xs-6 col-sm-4 col-md-3">
+        <img class="img-thumbnail" src="https://upload.wikimedia.org/wikipedia/commons/8/89/Fugu_sashimi.jpg" alt="">
+      </div>
+      <div class="col-xs-6 col-sm-4 col-md-3">
+        <img class="img-thumbnail" src="http://boatatfood.com/product_images/uploaded_images/54aa87e9e8c92.jpg" alt="">
+      </div>
+      <div class="col-xs-6 col-sm-4 col-md-3">
+        <img class="img-thumbnail" src="https://cbu01.alicdn.com/img/ibank/2016/331/481/2987184133_2001063640.310x310.jpg" alt="">
+      </div>
+      <div class="col-xs-6 col-sm-4 col-md-3">
+        <img class="img-thumbnail" src="https://retrip.s3.amazonaws.com/article/33816/images/3381661977e0b-221e-47b4-bb4e-4db474c2d189_m.jpg" alt="">
+      </div>
+      <div class="col-xs-6 col-sm-4 col-md-3">
+        <img class="img-thumbnail" src="http://oneplusfood.com/images/%E5%B8%B6%E5%AD%90%E5%88%BA%E8%BA%AB.JPG" alt="">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
